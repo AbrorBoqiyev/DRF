@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklist</title>
+</head>
+<body>
+    <div class="main">
+        <h1>{{title}}</h1>
+        <p>{{content}}</p>
+    </div>
+    <button onclick="toggler()">toggle</button>
+
+
+<script>
+    function toggler(){
+        document.body.classList.toggle('darkTheme')
+    }
+</script>
+</body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        transition: 0.5s;
+    }
+
+    body{background-color: burlywood;}
+    .main{
+        width: 70%;
+        margin: 20px auto;
+    }
+    .darkTheme{
+        background-color: #444;
+        color: snow;
+    }
+    button{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        padding: 5px 15px;
+        border: none;
+        border-radius: 5px;
+        margin: 20px;
+        cursor: pointer;
+        background: linear-gradient(to right bottom, lightblue, lightgray);
+    }
+    button:hover{
+        transform: scale(1.1);
+        background: linear-gradient(to right bottom, green, lightgreen);
+        color: snow;
+    }
+
+</style>
+</html>

@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     path('', include("BookListAPI.urls")),
-    path('api/', include('BookListAPI.urls'))
+    path('api/', include('BookListAPI.urls')),
+    path('api/', include('LittleLemonAPI.urls')),
 ]

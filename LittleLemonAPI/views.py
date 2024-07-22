@@ -6,6 +6,9 @@ from .serializers import MenuItemSerializer, CategorySerializer
 from rest_framework import status
 from django.core.paginator import Paginator, EmptyPage
 
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import permission_classes
+
 
 @api_view(['GET', 'POST'])
 def menu_items(request):
@@ -51,7 +54,6 @@ def single_item(request, pk):
 
 
 
-
 @api_view(['GET','POST'])
 def Category_view(request):
     if request.method == 'GET':
@@ -64,3 +66,9 @@ def Category_view(request):
         Sd_Category.save()
         return Response(Sd_Category.data, status.HTTP_201_CREATED)
     
+
+
+@api_view()
+@permission_classes([IsAuthenticated])
+def secret(request):
+    return Response({"message": 'some secret message'})

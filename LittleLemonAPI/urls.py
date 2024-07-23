@@ -9,5 +9,7 @@ urlpatterns = [
     path('menu-items/category', Category_view),
     path('secret/', secret),  
     path('api-token-auth', obtain_auth_token),
-    path('manager-view/', manager_view)
+    path('manager-view/', manager_view),
+    path('throttle-check/', throttle_check),
+    path('throttle-check-auth', throttle_check_auth),
 ]

@@ -7,5 +7,3 @@ app = apps.get_app_config('LittleLemonAPI')
 
 for model_name, model in app.models.items():
     admin.site.register(model)
-    
-    # kuykykuy

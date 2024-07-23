@@ -72,3 +72,12 @@ def Category_view(request):
 @permission_classes([IsAuthenticated])
 def secret(request):
     return Response({"message": 'some secret message'})
+j
+
+@api_view()
+@permission_classes([IsAuthenticated])
+def manager_view(request):
+    if request.user.groups.filter(name='Manager').exists():
+        return Response({'message': 'Only Manager Should See This'})
+    else:
+        return Response({'message': 'You are not authorized'}, 403)

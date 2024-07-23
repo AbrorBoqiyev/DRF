@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 serializers = "*"
 djangorestframework-xml = "*"
+djoser = "*"
 
 [dev-packages]
 

@@ -27,7 +27,7 @@ def menu_items(request):
         if search:
             items = items.filter(title__istartswith=search)
         if ordering:
-            # items = items.order_by(ordering)
+            items = items.order_by(ordering)
             ordering_fields = ordering.split(",")
             items = items.order_by(*ordering_fields)
             

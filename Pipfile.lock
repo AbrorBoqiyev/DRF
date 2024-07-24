@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "17dcb375090691c9045100707c95764f09b9691bab88b2e31ded93b231f5b190"
+            "sha256": "09d975a5df56f56b9471deaaa7a1c0f5a7f819f90af766a9e0ba93b74d5bbc71"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -254,11 +254,12 @@
         },
         "djangorestframework-simplejwt": {
             "hashes": [
-                "sha256:381bc966aa46913905629d472cd72ad45faa265509764e20ffd440164c88d220",
-                "sha256:6c4bd37537440bc439564ebf7d6085e74c5411485197073f508ebdfa34bc9fae"
+                "sha256:4c0d2e2513e12587d93501ac091781684a216c3ee614eb3b5a10586aef5ca845",
+                "sha256:d27d4bcac2c6394f678dea8b4d0d511c6e18a7f2eb8aaeeb8a7de601aeb77c42"
             ],
-            "markers": "python_version >= '3.8'",
-            "version": "==5.3.1"
+            "index": "pypi",
+            "markers": "python_version >= '3.7'",
+            "version": "==5.2.2"
         },
         "djangorestframework-xml": {
             "hashes": [
@@ -347,6 +348,15 @@
             ],
             "index": "pypi",
             "version": "==0.2.4"
+        },
+        "setuptools": {
+            "hashes": [
+                "sha256:032d42ee9fb536e33087fb66cac5f840eb9391ed05637b3f2a76a7c8fb477936",
+                "sha256:33874fdc59b3188304b2e7c80d9029097ea31627180896fb549c578ceb8a0855"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==71.1.0"
         },
         "social-auth-app-django": {
             "hashes": [

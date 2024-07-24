@@ -9,6 +9,8 @@ djangorestframework = "*"
 serializers = "*"
 djangorestframework-xml = "*"
 djoser = "*"
+djangorestframework-simplejwt = "~=5.2.1"
+setuptools = "*"
 
 [dev-packages]
 
